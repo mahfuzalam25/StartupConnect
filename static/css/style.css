@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: .2s linear;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --main-color: #d3ad7f;
+    --black: #0a0a12;
+    --bg: linear-gradient(135deg, #010103, #0b0e19, #1a1f2b);
+    --border: 0.1rem solid rgba(255, 255, 255, 0.2);
+
+    --text-light: #f5f5f5;
+    --text-muted: #b0b0b0;
+
+
+    --hover-color: #f5f5f5;
+    --card-bg: rgba(19, 19, 26, 0.8);
+    --input-bg: #1c1f2b;
+
+
+    --shadow: 0 0 10px rgba(211, 173, 127, 0.2);
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-light);
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+
+/* Temporary styles for preview the colour theme */
+
+nav {
+    background: var(--card-bg);
+    border-bottom: var(--border);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--text-light);
+    font-size: 2.5rem;
+}
+nav ul li {
+    margin: 0 1rem;
+}
+nav ul li a {
+    color: var(--text-light);
+    font-size: 1.8rem;
+}
+.navbar-toggler-icon{
+    background-color: var(--text-light);
+}
+input{
+    border: var(--border);
+}
+.search-btn{
+    border: var(--border) !important;
+    font-size: 1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    width: 65px;
+    height: 30px;
+    transition: 0.5s;
+}
+.btc{
+    border: var(--border) !important;
+    font-size: 1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    width: 70px;
+    height: 30px;
+    transition: 0.5s;
+    margin: 0 2px;
+}
+.btc:hover{
+    background: var(--hover-color);
+    color: var(--black);
+}
+/* Temporary styles for preview the colour theme */
