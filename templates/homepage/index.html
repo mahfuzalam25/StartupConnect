@@ -2,21 +2,21 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="images/">
-    <title>StartupConnect</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/static/css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/" />
+  <title>StartupConnect</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="/static/css/style.css" />
 </head>
 
 <body>
-
-    <header>
+  <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="" href="#">StartupConnect</a>
@@ -58,7 +58,8 @@
                         </li> -->
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2 search-btn" type="search" placeholder="Search" aria-label="Search" />
+                        <input class="form-control me-2 search-btn" type="search" placeholder="Search"
+                            aria-label="Search" />
                         <button class="btn btc" type="submit">Search</button>
                         <button class="btn btc" type="button">Login</button>
                         <button class="btn btc" type="button">Join Now?</button>
@@ -67,12 +68,1106 @@
             </div>
         </nav>
 
+        Hidden Category Navbar
+        <nav class="category-nav" id="categoryNav">
+            <div class="category-dropdown">
+                <button class="category-btn">Browse Categories ▼</button>
+                <div class="category-menu">
+                    <a href="#">Accounting/Finance</a>
+                    <a href="#">IT & Telecom</a>
+                    <a href="#">Marketing/Sales</a>
+                    <a href="#">Engineering</a>
+                    <a href="#">Healthcare</a>
+                </div>
+            </div>
+        </nav>
     </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
-    <script src="/static/js/scripts.js"></script>
+    <section class="container hero-grid">
+        <div class="hero">
+            <div class="background-image">
+                <img src="/static/images/heroimg.jpg" alt="Office Background">
+            </div>
+            <div class="hero-content">
+                <h1>Find the right job</h1>
+                <div class="stats">
+                    <a href="#" class="stat-item">
+                        <div class="stat-item-icon">
+                            <h3><i class="fas fa-briefcase"></i></h3>
+                        </div>
+                        <div class="stat-item-info">
+                            <h3>5,749</h3>
+                            <p>LIVE JOBS</p>
+                        </div>
+                    </a>
+                    <a href="#" class="stat-item">
+                        <div class="stat-item-icon">
+                            <h3><i class="fa-solid fa-user"></i></h3>
+                        </div>
+                        <div class="stat-item-info">
+                            <h3>25,751+</h3>
+                            <p>VACANCIES</p>
+                        </div>
+                    </a>
+                    <a href="#" class="stat-item">
+                        <div class="stat-item-icon">
+                            <h3><i class="fa-solid fa-building"></i></h3>
+                        </div>
+                        <div class="stat-item-info">
+                            <h3>3,282</h3>
+                            <p>COMPANIES</p>
+                        </div>
+                    </a>
+                    <a href="#" class="stat-item">
+                        <div class="stat-item-icon">
+                            <h3><i class="fa-solid fa-file"></i></h3>
+                        </div>
+                        <div class="stat-item-info">
+                            <h3>381</h3>
+                            <p>NEW JOBS</p>
+                        </div>
+                    </a>
+
+                </div>
+                <div class="search-container">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search by keyword">
+                        <select>
+                            <option value="">Organization Type</option>
+                            <option value="tech">Technology</option>
+                            <option value="finance">Finance</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="education">Education</option>
+                        </select>
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="location-grid">
+                    <a href="#" class="location-item">Dhaka (8997)</a>
+                    <a href="#" class="location-item">Barguna (69)</a>
+                    <a href="#" class="location-item">Khulna (177)</a>
+                    <a href="#" class="location-item">Sylhet (142)</a>
+                    <a href="#" class="location-item">Chattogram (547)</a>
+                    <a href="#" class="location-item">Rajshahi (145)</a>
+                    <a href="#" class="location-item">Rangpur (132)</a>
+                    <a href="#" class="location-item">Mymensingh (102)</a>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="quick-links">
+                <h2>QUICK LINKS</h2>
+                <ul>
+                    <li><a href="#">Employee List (3280)</a></li>
+                    <li><a href="#">New Jobs (381)</a></li>
+                    <li><a href="#">Deadline Tomorrow (479)</a></li>
+                    <li><a href="#">Internship Opportunity (64)</a></li>
+                    <li><a href="#">Contractual Jobs (203)</a></li>
+                    <li><a href="#">Part time Jobs (41)</a></li>
+                    <li><a href="#">Overseas Jobs (54)</a></li>
+                    <li><a href="#">Work From Home (60)</a></li>
+                    <li><a href="#">Fresher Jobs (1670)</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="swiper-section">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/static/images/accounting.webp" alt="Accounting/Finance">
+                    <h3>Accounting/Finance</h3>
+                    <span>(417)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Bank/Non-Bank Fin. Institution">
+                    <h3>Bank/Non-Bank Fin. Institution</h3>
+                    <span>(127)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Supply Chain/Procurement">
+                    <h3>Supply Chain/Procurement</h3>
+                    <span>(139)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Education/Training">
+                    <h3>Education/Training</h3>
+                    <span>(443)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="/static/images/accounting.webp" alt="Engineer/Architects">
+                    <h3>Engineer/Architects</h3>
+                    <span>(391)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Garments/Textile">
+                    <h3>Garments/Textile</h3>
+                    <span>(568)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="HR/Org. Development">
+                    <h3>HR/Org. Development</h3>
+                    <span>(179)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Gen Mgt/Admin">
+                    <h3>Gen Mgt/Admin</h3>
+                    <span>(219)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Healthcare/Medical">
+                    <h3>Healthcare/Medical</h3>
+                    <span>(216)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Data Entry/Computer Operator">
+                    <h3>Data Entry/Computer Operator</h3>
+                    <span>(26)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Mechanic/Technician">
+                    <h3>Mechanic/Technician</h3>
+                    <span>(48)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Nurse">
+                    <h3>Nurse</h3>
+                    <span>(34)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Delivery Man">
+                    <h3>Delivery Man</h3>
+                    <span>(14)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Graphic Designer">
+                    <h3>Graphic Designer</h3>
+                    <span>(98)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Accounting/Finance">
+                    <h3>Accounting/Finance</h3>
+                    <span>(417)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Bank/Non-Bank Fin. Institution">
+                    <h3>Bank/Non-Bank Fin. Institution</h3>
+                    <span>(127)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Supply Chain/Procurement">
+                    <h3>Supply Chain/Procurement</h3>
+                    <span>(139)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Education/Training">
+                    <h3>Education/Training</h3>
+                    <span>(443)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Engineer/Architects">
+                    <h3>Engineer/Architects</h3>
+                    <span>(391)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Garments/Textile">
+                    <h3>Garments/Textile</h3>
+                    <span>(568)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="HR/Org. Development">
+                    <h3>HR/Org. Development</h3>
+                    <span>(179)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Gen Mgt/Admin">
+                    <h3>Gen Mgt/Admin</h3>
+                    <span>(219)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Healthcare/Medical">
+                    <h3>Healthcare/Medical</h3>
+                    <span>(216)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Data Entry/Computer Operator">
+                    <h3>Data Entry/Computer Operator</h3>
+                    <span>(26)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Mechanic/Technician">
+                    <h3>Mechanic/Technician</h3>
+                    <span>(48)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Nurse">
+                    <h3>Nurse</h3>
+                    <span>(34)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Delivery Man">
+                    <h3>Delivery Man</h3>
+                    <span>(14)</span>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="" alt="Graphic Designer">
+                    <h3>Graphic Designer</h3>
+                    <span>(98)</span>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+  </header>
+
+  <!--Hot Jobs Section-->
+  <section class="hot-jobs">
+    <div class="hot-jobs-container">
+      <h2 class="hot-jobs-title"><i class="fa-sharp fa-solid fa-fire" style="color: #ff7b00;"></i> HOT JOBS</h2>
+
+      <div class="job-grid">
+        <!-- Job Card -->
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p1.jpg" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>UniMed UniHealth Pharmaceuticals Limited</h3>
+            <p>Analyst / Sr. Analyst</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p2.jpg" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Habitat for Humanity International</h3>
+            <p>Project Coordinator</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p3.jpg" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Sentry Security Services Ltd.</h3>
+            <p>Customer Relationship Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p4.jpg" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Padakhep Manabik Unnayan Kendra</h3>
+            <p>Manager / Senior Manager</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p5.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Notre Dame University Bangladesh</h3>
+            <p>Assistant Professor - Computer Science</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p6.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Bdjobs.com Limited.</h3>
+            <p>Customer Relationship Officer (Female)</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p7.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Padakhep Manabik Unnayan Kendra</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p8.jpg" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>Notre Dame University Bangladesh</h3>
+            <p>Assistant Professor</p>
+          </div>
+        </div>
+
+         <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p9.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p10.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p11.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p12.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p13.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p14.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p15.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p16.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p17.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p18.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p19.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p20.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p21.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p22.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p23.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p24.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+
+        <div class="job-card">
+          <div class="logo">
+            <img src="/static/images/hot-job-p25.png" alt="Company Logo">
+          </div>
+          <div class="job-info">
+            <h3>SQUARE Pharmaceuticals PLC.</h3>
+            <p>Medical Promotion Officer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+   <section class="tender-jobs">
+    <div class="tender-jobs-container">
+      <h2 class="tender-jobs-title"><i class="fa-solid fa-id-card-clip"></i> Tender/ Eoi</h2>
+
+      <div class="tender-grid">
+        <!-- Job Card -->
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p1.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p2.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+
+
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p3.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+
+
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p4.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+       <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p5.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p7.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p8.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p9.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p10.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p11.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p12.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p13.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p14.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p15.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p16.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p17.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+         <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p4.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+       <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p5.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p7.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p8.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p9.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p10.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p11.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p12.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p13.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p14.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p15.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p16.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+        <div class="tender-card">
+          <div class="logo">
+            <img src="/static/images/tender-p17.png" alt="Company Logo">
+          </div>
+          <div class="tender-info">
+            <h3>Dushtha Shasthya Kendra (DSK) - Coxbazar</h3>
+            <p> Request for Quotation (RFQ) for Hardware and Constructions Materials</p>
+          </div>
+        </div>
+       
+        
+      </div>
+    </div>
+  </section>
+
+
+  <!-- banner section -->
+   <section class="swiper-banners">
+        <div class="swiper Swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="background-image">
+                        <img src="/static/images/heroimg.jpg" alt="Office Background">
+                    </div>
+                    <div class="swiper-content">
+                        <h1>Develop Yourself for better career</h1>
+                        <p>Never miss a single opportunity. Search and apply on the go and get the perfect job for you.</p>
+                        <button><a href="">Visit SetupConnect</a></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="background-image">
+                        <img src="/static/images/heroimg.jpg" alt="Office Background">
+                    </div>
+                    <div class="swiper-content">
+                        <h1>Join the Largest Job Site of Bangladesh</h1>
+                        <p>Be a member of a family of more than one million job seekers and apply to any of the 3000+ live jobs</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="background-image">
+                        <img src="/static/images/heroimg.jpg" alt="Office Background">
+                    </div>
+                    <div class="swiper-content">
+                        <h1>Download SetupConnect.com Android App</h1>
+                        <p>Never miss a single opportunity. Search and apply on the go and get the perfect job for you.</p>
+                        <button><a href="">Download</a></button>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+  <!-- carrier section -->
+  <div class="carrier-banner">
+    <img src="/static/images/carrer-banner.png" alt="" />
+  </div>
+
+  <section class="training-wrapper">
+    <!-- Daylong Training -->
+    <div class="training-column">
+      <h3><i class="fa-solid fa-calendar-day"></i> Daylong Training</h3>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-book"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Practical Accounting for Non-Accounting Professionals</a>
+          </h4>
+          <p>13 - 15 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-language"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Communicative English for Executives and Corporate
+              Professionals</a>
+          </h4>
+          <p>14 - 16 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-shirt"></i></div>
+        <div class="course-content">
+          <h4><a href="#">How to Setup Buying House & Garments</a></h4>
+          <p>14 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-users"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Capacity Building Training for Administrative Professional</a>
+          </h4>
+          <p>14 - 15 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Mastering Conflict Management and Resolution at Work</a>
+          </h4>
+          <p>14 - 15 Nov 2025</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Exclusive Session on TDS & VDS (TAX & VAT Deduction at
+              Source)</a>
+          </h4>
+          <p>14 - 15 Nov 2025</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-handshake"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Inventory and Warehousing / Store Management</a>
+          </h4>
+          <p>14 - 15 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="#">View all Daylong training</a>
+      </div>
+    </div>
+
+    <!-- Evening Courses -->
+    <div class="course-column">
+      <h3><i class="fa-regular fa-moon"></i> Evening Courses</h3>
+
+      <div class="course-item">
+        <div class="course-icon">
+          <i class="fa-solid fa-diagram-project"></i>
+        </div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Project Cycle Management (PCM) for the NGO Professionals</a>
+          </h4>
+          <p>11 - 27 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-comments"></i></div>
+        <div class="course-content">
+          <h4><a href="#">Advanced Communication Strategies</a></h4>
+          <p>12 - 24 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-building"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Contemporary Supply Chain and Logistics Management</a>
+          </h4>
+          <p>12 Nov - 1 Dec 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon">
+          <i class="fa-solid fa-people-group"></i>
+        </div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Payroll Management for HR & Administration</a>
+          </h4>
+          <p>12 - 24 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Internal auditor certificate course on ISO 14001:2015
+              Environmental Management System (EMS)</a>
+          </h4>
+          <p>12 - 24 Nov 2025</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Managing Fleet Vehicle Repairs Maintenance Programs
+              Effectively</a>
+          </h4>
+          <p>12 - 24 Nov 2025</p>
+        </div>
+      </div>
+      <div class="course-item">
+        <div class="course-icon"><i class="fa-solid fa-award"></i></div>
+        <div class="course-content">
+          <h4>
+            <a href="#">Management Skills for Managers or Non Managers</a>
+          </h4>
+          <p>12 - 24 Nov 2025</p>
+        </div>
+      </div>
+
+      <div class="view-all">
+        <a href="#">View all Evening courses</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer Section-->
+  <Footer class="footer-contents">
+    <div class="footer-items">
+      <div class="footer-items-name">
+        <h3>About Us</h3>
+        <ul>
+          <li><a href="#">About StartupConnect.com</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">Accessibility Statement</a></li>
+          <li><a href="#">International Partners</a></li>
+          <li><a href="#">Other Partners</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-items-name">
+        <h3>Job Seekers</h3>
+        <ul>
+          <li><a href="#">Create Account</a></li>
+          <li><a href="#">StartupConnect Pro</a></li>
+          <li><a href="#">Video CV</a></li>
+          <li><a href="#">My StartupConnect Panel</a></li>
+          <li><a href="#">List of Features</a></li>
+          <li><a href="#">Career Counseling</a></li>
+          <li><a href="#">Video Guides</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-items-name">
+        <h3>Recruiter</h3>
+        <ul>
+          <li><a href="#">Create Account</a></li>
+          <li><a href="#">Products Service</a></li>
+          <li><a href="#">Disability Inclusion Practice</a></li>
+          <li><a href="#">Post a Job</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><p>Download Employer App</p></li>
+          <div class="app-store">
+            <a href="#"><img src="/static//images/google-play-badge.svg" alt=""></a>
+            <a href="#"><img src="/static//images/App-Store-Badge.svg" alt=""></a>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-items-name">
+        <h3>Tools & Social Media</h3>
+        <ul>
+          <li><a href="#"><i class="fa-brands fa-android"></i>StartupConnect Android App</a></li>
+          <li><a href="#"><i class="fa-brands fa-app-store-ios"></i>StartupConnect iOS App</a></li>
+          <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="fa-brands fa-google"></i>Google</a></li>
+          <li><a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+          <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+          <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+          <li><p>Download Mobile App</p></li>
+           <div class="app-store">
+            <a href="#"><img src="/static//images/google-play-badge.svg" alt=""></a>
+            <a href="#"><img src="/static//images/App-Store-Badge.svg" alt=""></a>
+          </div>
+        </ul>
+      </div>
+
+    </div>
+    <div class="contact-text">
+      <p>Need any support? Call to <span><i class="fa-solid fa-phone"></i>16479, 09638666444, 01897627858</span></p>
+      <p>Our Contact Centre is available from 9 am to 8 pm (Saturday to Thursday).</p>
+    </div>
+  </Footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <script src="/static/js/scripts.js"></script>
 </body>
 
 </html>

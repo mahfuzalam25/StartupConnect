@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/" />
+    <title>StartupConnect</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="" href="#">StartupConnect</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class=" active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Internships</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Startups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Resources</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="" href="#">Contact</a>
+                        </li>
+                        <!-- <li class="nav-item dropdown">
+                            <a class=" dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li> -->
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 search-btn" type="search" placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btc" type="submit">Search</button>
+                        <button class="btn btc" type="button">Login</button>
+                        <button class="btn btc" type="button">Join Now?</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hidden Category Navbar -->
+        <nav class="category-nav" id="categoryNav">
+            <div class="category-dropdown">
+                <button class="category-btn">Browse Categories ▼</button>
+                <div class="category-menu">
+                    <a href="#">Accounting/Finance</a>
+                    <a href="#">IT & Telecom</a>
+                    <a href="#">Marketing/Sales</a>
+                    <a href="#">Engineering</a>
+                    <a href="#">Healthcare</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="cover-photo">
+        <img src="/static/images/cover.webp" alt="" />
+        <div class="edit-buttons">
+            <input type="file" id="coverUpload" hidden>
+
+            <!-- This button will open file dialog -->
+            <label for="coverUpload" class="upload-btn">Upload Cover Photo</label>
+            <button>View client Photo</button>
+        </div>
+    </div>
+    <div class="profile-contents">
+        <img src="/static/images/cover.webp" alt="" />
+        <div class="edit-icon">
+            <label>
+                <input type="file" id="fileUpload" aria-label="Upload file">
+                <i class="fa-solid fa-pen" title="Upload"></i>
+            </label>
+        </div>
+        <div class="profile-text">
+            <h4>General</h4>
+            <h4><i class="fa-solid fa-circle-plus"></i> Add Profile</h4>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="userdata-contents">
+        <div class="username">
+            <h2 class="name">Bishal Modak</h2>
+            <h3>@BishalModak</h3>
+        </div>
+
+        <div class="share-profile">
+            <a href="#">
+                <i class="fa-solid fa-share-nodes"></i>
+            </a>
+            <button><a href="#"></a>Edit Profile</button>
+        </div>
+    </div>
+
+    <div class="user-info">
+        <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <p>0.0</p>
+        </div>
+        <div class="message">
+            <i class="fa-solid fa-message"></i>
+            <p>0</p>
+        </div>
+
+        <div class="message">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+            <p>0</p>
+        </div>
+
+        <div class="message">
+            <i class="fa-solid fa-circle-notch"></i>
+            <p>0</p>
+        </div>
+    </div>
+
+    <div class="designation">
+        <h2>I am a Web Developer</h2>
+    </div>
+
+    <div class="description">
+        <p>Flag of Bangladesh (4:02 PM) ・ Joined on October 26, 2025</p>
+        <p>I’m a passionate and detail-oriented web developer with hands-on experience in building responsive websites
+            and web applications. I specialize in React.js, Django, and Flutter, creating modern, user-friendly, and
+            high-performing solutions. Whether it’s front-end design or full-stack development, I focus on writing
+            clean, efficient code and delivering projects on time.</p>
+    </div>
+
+    <div class="profile-sections">
+        <h2>Portfolio</h2>
+
+        <div class="manage-profile">
+            <i class="fa-solid fa-pen"></i>
+            <a href="#">Manage Profile</a>
+        </div>
+    </div>
+    <div class="profile-content">
+        <img src="/static/images/portfolio.svg" alt="">
+        <p>No portfolio items have been added yet</p>
+    </div>
+
+    <div class="reviews-section">
+        <div class="reviews">
+            <i class="fa-solid fa-star"></i>
+            <p>0.0</p>
+            <p>. 0 Reviews</p>
+        </div>
+        <div class="filter">
+            <p>Filter by</p>
+            <select name="reviews" id="reviews">
+                <option value="all">All Reviews</option>
+                <option value="5star">5 Star</option>
+                <option value="4star">4 Star</option>
+                <option value="3star">3 Star</option>
+                <option value="2star">2 Star</option>
+                <option value="1star">1 Star</option>
+            </select>
+            <p>Sort By</p>
+            <select name="sort" id="sort">
+                <option value="mostrecent">Most Recent</option>
+                <option value="highestrated">Highest Rated</option>
+                <option value="lowestrated">Lowest Rated</option>
+            </select>
+        </div>
+    </div>
+    <div class="profile-content">
+        <p>No reviews to see here!</p>
+    </div>
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Experience</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add Experience</a>
+        </div>
+
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>References</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Request reference</a>
+        </div>
+
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Education</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add education</a>
+        </div>
+
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Qualification</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add qualification</a>
+        </div>
+
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Publications</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add publication</a>
+        </div>
+
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Certifications</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add Certificate</a>
+        </div>
+    </div>
+
+    <div class="experience-section">
+        <div class="experience-text">
+            <h2>Articales</h2>
+            <p>No experience have been added.</p>
+        </div>
+        <div class="add-experience">
+            <i class="fa-solid fa-circle-plus"></i>
+            <a href="#">Add Articles</a>
+        </div>
+
+    </div>
+
+
+    <!--Footer Section-->
+    <Footer class="footer-contents">
+        <div class="footer-items">
+            <div class="footer-items-name">
+                <h3>About Us</h3>
+                <ul>
+                    <li><a href="#">About StartupConnect.com</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Accessibility Statement</a></li>
+                    <li><a href="#">International Partners</a></li>
+                    <li><a href="#">Other Partners</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-items-name">
+                <h3>Job Seekers</h3>
+                <ul>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">StartupConnect Pro</a></li>
+                    <li><a href="#">Video CV</a></li>
+                    <li><a href="#">My StartupConnect Panel</a></li>
+                    <li><a href="#">List of Features</a></li>
+                    <li><a href="#">Career Counseling</a></li>
+                    <li><a href="#">Video Guides</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-items-name">
+                <h3>Recruiter</h3>
+                <ul>
+                    <li><a href="#">Create Account</a></li>
+                    <li><a href="#">Products Service</a></li>
+                    <li><a href="#">Disability Inclusion Practice</a></li>
+                    <li><a href="#">Post a Job</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li>
+                        <p>Download Employer App</p>
+                    </li>
+                    <div class="app-store">
+                        <a href="#"><img src="/static//images/google-play-badge.svg" alt=""></a>
+                        <a href="#"><img src="/static//images/App-Store-Badge.svg" alt=""></a>
+                    </div>
+                </ul>
+            </div>
+            <div class="footer-items-name">
+                <h3>Tools & Social Media</h3>
+                <ul>
+                    <li><a href="#"><i class="fa-brands fa-android"></i>StartupConnect Android App</a></li>
+                    <li><a href="#"><i class="fa-brands fa-app-store-ios"></i>StartupConnect iOS App</a></li>
+                    <li><a href="#"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i>Google</a></li>
+                    <li><a href="#"><i class="fa-brands fa-youtube"></i>Youtube</a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                    <li>
+                        <p>Download Mobile App</p>
+                    </li>
+                    <div class="app-store">
+                        <a href="#"><img src="/static//images/google-play-badge.svg" alt=""></a>
+                        <a href="#"><img src="/static//images/App-Store-Badge.svg" alt=""></a>
+                    </div>
+                </ul>
+            </div>
+
+        </div>
+        <div class="contact-text">
+            <p>Need any support? Call to <span><i class="fa-solid fa-phone"></i>16479, 09638666444, 01897627858</span>
+            </p>
+            <p>Our Contact Centre is available from 9 am to 8 pm (Saturday to Thursday).</p>
+        </div>
+    </Footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="/static/js/scripts.js"></script>
+</body>
+
+</html>
